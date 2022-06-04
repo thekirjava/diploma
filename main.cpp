@@ -3,9 +3,7 @@
 #include "TextFileReader.h"
 #include "Data.h"
 #include <string>
-#include <utility>
 #include "Tree.h"
-#include <vector>
 #include "DataProcessor.h"
 
 using namespace std;
