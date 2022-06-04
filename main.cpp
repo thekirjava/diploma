@@ -47,10 +47,10 @@ void maxTree(const string &inputFileName, const string &outputFileName) {
     auto studentInfoComparator = [](const StudentInfo &lhs, const StudentInfo &rhs) { return lhs.gpa < rhs.gpa; };
     maxTree <StudentInfo> (tree.begin(), tree.end(), [](dataType data) {
         return StudentInfo {get<0>(data.values), get<5>(data.values)};
-    });
+    }, fout);
 }
 
 int main() {
-    //maxTree("input.txt", "output.txt");
+    maxTree("input.txt", "output.txt");
     maxTree("incorrect_input.txt", "filtered_output.txt");
 }
